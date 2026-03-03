@@ -162,25 +162,56 @@ header nav {
 }
 
 #green .color {
-    background-color: #393c38;
+  background-color: #393c38;
 }
 
 #silver .color {
-    background-color: #f1f2ed;
+  background-color: #f1f2ed;
 }
 
 #golden .color {
-    background-color: #fae7cf;
+  background-color: #fae7cf;
 }
 
 #grafite .color {
-    background-color: #44524f;
+  background-color: #44524f;
 }
 
 #blue .color {
-    background-color: #a7c1d9;
+  background-color: #a7c1d9;
 }
 
 .selected {
-    outline: 2px solid #43a1ff;
+  outline: 2px solid #43a1ff;
+}
+
+@media (max-width: 480px) {
+  #navbar {
+    & li {
+      display: none;
+    }
+
+    & #logo {
+      display: flex;
+    }
+  }
+
+  #bottom-header-links {
+    & a {
+      display: none;
+    }
+
+    & .btn {
+      display: flex;
+    }
+  }
+
+  #main-content {
+    padding: 2rem;
+    overflow: hidden;
+
+    & #subtitle {
+        font-size: 3rem;
+    }
+  }
 }
